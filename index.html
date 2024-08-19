@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      width: 500px;
+      height: 500px;
+      display: grid;
+      gap: 1.5rem;
+      background-color :black;
+      grid-template-columns:150px 220px 6px 50px;
+      grid-template-rows: 100px 153px 110px 53px;
+    }
+
+    .item {
+      background-color: #F0F1EC;
+    }
+    .red{
+      background-color: rgb(147, 14, 14);
+    }
+
+    .box1 {
+      background-color: rgba(212, 134, 73, 0.752);
+      grid-column: span 3;
+    }
+
+    .box2 {
+      background-color: rgb(122, 198, 60);
+      grid-row: span 2;
+    }
+
+    .blue{
+      background-color: rgba(46, 60, 136, 0.625);
+    }
+    .green{
+      background-color: rgba(12, 121, 12, 0.747);
+    }
+
+    .box3 {
+      grid-area: 2 / 2 / 4 /4
+    }
+    .box4 {
+      background-color: rgb(105, 42, 164);
+      grid-area: 2 / 2 / 4/4
+    }
+    .yellow{
+      background-color: rgb(235, 235, 48);
+    }
+    .box5 {
+      grid-area: 0.5 / 0.5/ 0.5/0.5 
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item box1"></div>
+    <div class="item box2"></div>
+    <div class="item blue"></div>
+
+    <div class="item green"></div>
+
+    <div class="item"></div>
+    <div class="item box3"></div>
+    <div class="item box4"></div>
+    <div class="item yellow"></div>
+  </div>
+</body>
+
+</html>
